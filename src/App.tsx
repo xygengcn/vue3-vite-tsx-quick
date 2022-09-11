@@ -5,8 +5,13 @@ export default defineComponent({
   setup() {
     return () => (
       <div class="app">
-        这是父组件
-        <HelloWorld></HelloWorld>
+        <h1>这是父组件</h1>
+        <HelloWorld
+          msg="hahah"
+          onChange={(count) => {
+            console.log('change', count.value);
+          }}
+        ></HelloWorld>
       </div>
     );
   },
