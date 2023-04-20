@@ -5,7 +5,7 @@ export default defineComponent({
   setup() {
     return () => (
       <div class="app">
-        <h1>这是父组件</h1>
+        <h1>这是父组件，更新依赖:2023-04-20</h1>
         <HelloWorld
           msg="hahah"
           onChange={(count) => {
